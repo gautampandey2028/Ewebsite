@@ -1,0 +1,23 @@
+.cart {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #0c0c0c;
+    border-radius: 8px;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #211f1f;
+    padding: 10px 0;
+  }
+  
+  .cart-item h4 {
+    margin: 0;
+  }
+  
+  .cart-item button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

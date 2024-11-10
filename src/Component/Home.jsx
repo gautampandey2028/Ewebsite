@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import shop from './Shop';
 //import Shop from './Shop';
-//import './App.css'; // Make sure to import your Tailwind CSS here
-
+//import './App.css'; 
 const Home = () => {
   return (
     <div>

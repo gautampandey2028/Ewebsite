@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -29,8 +31,15 @@ const Login = () => {
 
     // Proceed with login process (e.g., call an API here)
     console.log("Logging in with:", { email, password });
-    sessionStorage.setItem('userdetails',JSON.stringify(email,password))
-    navigate('/shop')
+    
+    // Simulate successful login
+    sessionStorage.setItem('userdetails', JSON.stringify({ email }));
+    
+    // Show success toast notification
+    toast.success("Login successful!");
+   
+    // Navigate to another page after successful login
+    setTimeout(() => navigate('/cartprovider'), 2000);
   };
 
   return (
@@ -79,6 +88,7 @@ const Login = () => {
           </a>
         </p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

@@ -26,77 +26,9 @@ const About = () => {
           </p>
         </section>
 
-        {/* Team Section */}
-        <section className="text-center mb-12">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6">Meet the Team</h2>
-          <div className="flex flex-wrap justify-center -mx-4">
+    
             
-            {/* Team Member 1 */}
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member"
-                  className="w-32 h-32 rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">Jane Doe</h3>
-                <p className="text-gray-500 mb-2">CEO</p>
-                <p className="text-gray-600">
-                  Passionate about driving growth and building lasting relationships.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member"
-                  className="w-32 h-32 rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">John Smith</h3>
-                <p className="text-gray-500 mb-2">CTO</p>
-                <p className="text-gray-600">
-                  Leading technology innovation and creating seamless user experiences.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member"
-                  className="w-32 h-32 rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">Emily Davis</h3>
-                <p className="text-gray-500 mb-2">Head of Marketing</p>
-                <p className="text-gray-600">
-                  Crafting creative strategies to reach and engage our audience.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 4 */}
-            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Team Member"
-                  className="w-32 h-32 rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">Mike Johnson</h3>
-                <p className="text-gray-500 mb-2">Customer Service Lead</p>
-                <p className="text-gray-600">
-                  Dedicated to ensuring customer satisfaction and solving problems.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </section>
+          
 
         {/* Company Achievements or History Section */}
         <section className="bg-gray-200 rounded-lg p-8">

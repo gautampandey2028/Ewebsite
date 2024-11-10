@@ -8,7 +8,7 @@ const About = lazy(()=>import('./Component/About'))
 import { CartProvider } from './Component/CartProvider';
 import Footer from './Header/Footer';
 import Shop from './Component/Shop';
-import Login from './auth/login';
+import Login from './auth/login.jsx';
 import Register from './auth/Register';
 
 const App = () => {

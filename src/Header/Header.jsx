@@ -18,7 +18,6 @@ const Header = () => {
     console.log('User Details:', userDetails);
     setIsAuth(userDetails ? true : false);
   }, [sessionStorage.getItem('userdetails')]);
-
   const { cart } = useContext(CartContext); 
 
   return (

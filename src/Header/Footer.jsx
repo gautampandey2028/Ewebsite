@@ -75,7 +75,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="bg-gray-900 text-center py-4">
-        <p className="text-gray-500">@copy Right</p>
+        <p className="text-gray-500">@copy Right gautam pandey</p>
       </div>
     </>
   );

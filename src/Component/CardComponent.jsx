@@ -4,7 +4,7 @@ import { CartContext } from "./CartProvider";
 import { Link, useNavigate } from "react-router-dom";
 
 
-import './cart.css'
+import './Cart.css'
 
 const Cart = () => {
   const navigate = useNavigate();

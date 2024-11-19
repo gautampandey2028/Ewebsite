@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import ResData from "./ResData";
+=======
+import ResData from "./ResData.jsx";
+>>>>>>> 167d937c2e4322cb7ca1ace43a1e704d24538cd9
 import { NavLink } from "react-router-dom";
 
 const Shop = () => {

@@ -8,22 +8,22 @@ const Header = () => {
   const [isAuth, setIsAuth] = useState(false);
 
   const logoutAction = () => {
-    console.log("Logging out..."); 
+    console.log("Logging out...");
     sessionStorage.removeItem('userdetails');
     navigate('/login');
   };
-   
+
   useEffect(() => {
     const userDetails = JSON.parse(sessionStorage.getItem('userdetails'));
     console.log('User Details:', userDetails);
     setIsAuth(userDetails ? true : false);
   }, [sessionStorage.getItem('userdetails')]);
 
-  const { cart } = useContext(CartContext); 
+  const { cart } = useContext(CartContext);
 
   return (
     <>
-      <div className="flex justify-between bg-neutral-100 shadow-sm sticky top-0">
+      <div className="flex justify-between bg-neutral-100 shadow-sm sticky top-0 z-10">
         <div className="logo-container">
           <img
             className="w-28"
@@ -31,9 +31,9 @@ const Header = () => {
             alt="Logo"
           />
         </div>
-        <div className="flex align-bottom">
-          <ul className="flex p-5 m-5">
-            <li className="px-6">
+        <div className="flex items-center">
+          <ul className="flex p-5 m-5 space-x-6">
+            <li>
               <NavLink
                 to="/"
                 className="hover:text-blue-500 hover:font-semibold transition duration-200"
@@ -41,7 +41,7 @@ const Header = () => {
                 HOME
               </NavLink>
             </li>
-            <li className="px-6">
+            <li>
               <NavLink
                 to="/contact"
                 className="hover:text-red-500 hover:font-semibold transition duration-200"
@@ -49,7 +49,7 @@ const Header = () => {
                 CONTACT
               </NavLink>
             </li>
-            <li className="px-6">
+            <li>
               <NavLink
                 to="/about"
                 className="hover:text-green-500 hover:font-semibold transition duration-200"
@@ -57,7 +57,7 @@ const Header = () => {
                 ABOUT
               </NavLink>
             </li>
-            <li className="px-6">
+            <li>
               <NavLink
                 to="/shop"
                 className="hover:text-purple-500 hover:font-semibold transition duration-200"
@@ -65,20 +65,20 @@ const Header = () => {
                 SHOP NOW
               </NavLink>
             </li>
-            <li className="flex items-center px-6 hover:text-gray-600 transition duration-200">
+            <li className="flex items-center space-x-1">
               <NavLink
                 to="/cartprovider"
-                className="flex items-center space-x-1"
+                className="flex items-center space-x-1 hover:text-gray-600 transition duration-200"
               >
                 <ShoppingCartIcon className="w-6 h-6" /> {/* Cart Icon */}
                 <span>({cart.length})</span>
               </NavLink>
             </li>
             {!isAuth ? (
-              <li className="px-6">
+              <li>
                 <NavLink
                   to="/login"
-                  className="bg-black text-white p-2 rounded-lg hover:bg-gray-800 transition duration-200"
+                  className="bg-black text-white p-2 rounded-lg hover:bg-gray-800 transition duration-300"
                 >
                   LOGIN
                 </NavLink>
@@ -86,7 +86,7 @@ const Header = () => {
             ) : (
               <li
                 onClick={logoutAction}
-                className="px-6 hover:text-red-500 cursor-pointer transition duration-200"
+                className="cursor-pointer bg-red-600 text-white p-2 rounded-lg hover:bg-red-800 transition duration-300"
               >
                 Logout
               </li>

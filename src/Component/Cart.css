@@ -1,23 +1,90 @@
 .cart {
-    width: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #0c0c0c;
-    border-radius: 8px;
-  }
-  
-  .cart-item {
-    border-bottom: 1px solid #211f1f;
-    padding: 10px 0;
-  }
-  
-  .cart-item h4 {
-    margin: 0;
-  }
-  
-  .cart-item button {
-    margin: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
+  width: 400px;
+  margin: 60px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cart:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.cart-item:hover {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.cart-item h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  flex: 1;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-item button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cart-item button:hover {
+  background: #cc0000;
+  transform: scale(1.1);
+}
+
+.cart-total {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 20px;
+}
+
+.checkout-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.checkout-button:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: scale(1.05);
+}
+
+.empty-cart {
+  font-size: 18px;
+  color: #888;
+  margin-top: 15px;
+}
